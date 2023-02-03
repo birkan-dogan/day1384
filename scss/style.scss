@@ -1,0 +1,15 @@
+@import "./base/normalize";
+
+@import "./abstracts/mixin", "./abstracts/variables";
+@import "./components/header", "./components/main", "./components/nav",
+  "./components/article";
+
+@import "./pages/home";
+
+// additional font-family (Poppins, Mulish)
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@500;600&family=Poppins:wght@500;600;700&display=swap");
+
+body {
+  min-height: 100vh;
+  font-family: $font-family-1;
+}
