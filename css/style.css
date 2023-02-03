@@ -6,7 +6,7 @@
  * 2. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
-@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@500;600&family=Poppins:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@500;600&family=Poppins:wght@400;500;600;700&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -499,6 +499,100 @@ header .header-buttons .sign-up {
   background-color: #202142;
   border-radius: 10px;
   color: #fff;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 427px;
+  background-color: #fcfcff;
+  border-top: 1px solid #efefff;
+  text-align: center;
+  position: relative;
+}
+main .letter-box .main-title {
+  font-size: 22px;
+  font-weight: 700;
+}
+main .letter-box .main-description {
+  font-size: 18px;
+  font-weight: 400;
+  max-width: 581px;
+  height: 54px;
+}
+main .search-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #efefff;
+  box-shadow: 0px 16px 35px -15px rgba(2, 5, 132, 0.15);
+  border-radius: 10px;
+  width: 652px;
+  height: 74px;
+}
+main .search-box .dropdown {
+  border-right: 1px solid #efefff;
+  width: 165px;
+  height: 54px;
+}
+main .search-box .dropdown .dropdown-big {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+main .search-box .dropdown .dropdown-big p {
+  font-family: "Mulish", sans-serif;
+  font-weight: 600;
+  margin-top: 12px;
+}
+main .search-box .dropdown .dropdown-big button {
+  border: none;
+  background-color: transparent;
+}
+main .search-box .dropdown .dropdown-big button:focus {
+  outline: none;
+}
+main .search-box .dropdown .dropdown-box {
+  display: none;
+}
+main form {
+  padding-left: 18px;
+}
+main form button {
+  width: 96.27px;
+  border: none;
+  background-color: transparent;
+  font-family: "Mulish", sans-serif;
+  font-weight: 600;
+  opacity: 0.6;
+}
+main form button:focus {
+  outline: none;
+}
+main form button i {
+  width: 28px;
+}
+main form input {
+  padding: 17px 60px;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+main form input:focus {
+  outline: none;
+}
+main .day {
+  color: #ff6a95;
+  font-weight: 600;
+  position: absolute;
+  top: 38px;
+  left: 67px;
+  width: 106px;
+  height: 40px;
 }
 
 body {

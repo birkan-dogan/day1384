@@ -1,0 +1,112 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 427px;
+  background-color: $background-color;
+  border-top: 1px solid $border-color;
+  text-align: center;
+  position: relative; // for .day
+
+  .letter-box {
+    .main-title {
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    .main-description {
+      font-size: 18px;
+      font-weight: 400;
+      max-width: 581px;
+      height: 54px;
+    }
+  }
+
+  .search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #ffff;
+    border: 1px solid $border-color;
+    box-shadow: 0px 16px 35px -15px rgba(2, 5, 132, 0.15);
+    border-radius: 10px;
+
+    width: 652px;
+    height: 74px;
+
+    .dropdown {
+      border-right: 1px solid $border-color;
+      width: 165px;
+      height: 54px;
+
+      .dropdown-big {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        p {
+          font-family: $font-family-2;
+          font-weight: 600;
+          margin-top: 12px;
+        }
+
+        button {
+          border: none;
+          background-color: transparent;
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+
+      .dropdown-box {
+        display: none;
+      }
+    }
+  }
+
+  form {
+    padding-left: 18px;
+
+    button {
+      width: 96.27px;
+      border: none;
+      background-color: transparent;
+      font-family: $font-family-2;
+      font-weight: 600;
+      opacity: 0.6;
+
+      &:focus {
+        outline: none;
+      }
+
+      i {
+        width: 28px;
+      }
+    }
+
+    input {
+      //   border: none;
+      padding: 17px 60px;
+      border: none;
+      font-size: 18px;
+      font-weight: bold;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  .day {
+    color: $day-color;
+    font-weight: 600;
+    position: absolute;
+    top: 38px;
+    left: 67px;
+    width: 106px;
+    height: 40px;
+  }
+}
