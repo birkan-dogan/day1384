@@ -433,9 +433,78 @@ template {
   display: none;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+  max-width: 100vw;
+  background-color: #fcfcff;
+  padding: 40px 50px;
+}
+header .header-logo {
+  height: 40px;
+}
+header .header-logo img {
+  width: 40px;
+  height: 39px;
+  margin-right: 7px;
+}
+header .header-logo span {
+  width: 93px;
+  height: 14px;
+}
+header nav {
+  width: 524px;
+  height: 44px;
+}
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 23px;
+}
+header nav li a {
+  cursor: pointer;
+}
+header nav .free-design {
+  background-color: #f1f1fd;
+  width: 132px;
+  height: 44px;
+  border-radius: 32px;
+  padding: 10px;
+  font-weight: 600;
+}
+header .header-buttons {
+  height: 54px;
+  width: 198px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .header-buttons button {
+  width: 120px;
+  height: 54px;
+}
+header .header-buttons .log-in {
+  border: none;
+  background: transparent;
+  text-align: start;
+  font-weight: bold;
+}
+header .header-buttons .sign-up {
+  padding: 15px 20px;
+  background-color: #202142;
+  border-radius: 10px;
+  color: #fff;
+}
+
 body {
   min-height: 100vh;
   font-family: "Poppins", sans-serif;
+  color: #202142;
 }
 
 /*# sourceMappingURL=style.css.map */
