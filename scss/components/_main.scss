@@ -1,7 +1,5 @@
 main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-container;
   flex-direction: column;
   height: 427px;
   background-color: $background-color;
@@ -33,22 +31,23 @@ main {
     margin: 38px auto;
     width: 652px;
     height: 74px;
+    position: relative;
 
     .dropdown {
       border-right: 1px solid $border-color;
-      width: 165px;
+      width: 170px;
       height: 54px;
+      position: absolute;
+      left: 0px;
 
       .dropdown-big {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-container;
         gap: 20px;
 
         p {
           font-family: $font-family-2;
           font-weight: 600;
-          margin: 12px 10px 15px;
+          margin: 12px 10px 15px 15px;
         }
 
         button {
@@ -67,27 +66,34 @@ main {
   }
 
   form {
-    padding-left: 18px;
+    padding-left: 48px;
+    margin-left: 50px;
+    position: relative;
+    // border-left: 1px solid $border-color;
+    // border: 1px solid red;
 
     button {
-      width: 96.27px;
       border: none;
       background-color: transparent;
       font-family: $font-family-2;
       font-weight: 600;
-      opacity: 0.6;
+      opacity: 0.5;
+      position: absolute;
+      left: 15px;
+      top: 15px;
+
       &:focus {
         outline: none;
       }
 
       i {
-        width: 27px;
+        // width: 27px;
+        transform: scale(1.2);
       }
     }
 
     input {
-      //   border: none;
-      padding: 17px 60px;
+      padding: 17px 60px 10px 0px;
       border: none;
       font-size: 18px;
       font-weight: bold;

@@ -500,6 +500,11 @@ header .header-buttons .sign-up {
 header .header-buttons .sign-up a {
   color: #fff;
 }
+header .responsive-button {
+  display: none;
+  transform: scale(2);
+  cursor: pointer;
+}
 
 main {
   display: flex;
@@ -533,11 +538,14 @@ main .search-box {
   margin: 38px auto;
   width: 652px;
   height: 74px;
+  position: relative;
 }
 main .search-box .dropdown {
   border-right: 1px solid #efefff;
-  width: 165px;
+  width: 170px;
   height: 54px;
+  position: absolute;
+  left: 0px;
 }
 main .search-box .dropdown .dropdown-big {
   display: flex;
@@ -548,7 +556,7 @@ main .search-box .dropdown .dropdown-big {
 main .search-box .dropdown .dropdown-big p {
   font-family: "Mulish", sans-serif;
   font-weight: 600;
-  margin: 12px 10px 15px;
+  margin: 12px 10px 15px 15px;
 }
 main .search-box .dropdown .dropdown-big button {
   border: none;
@@ -561,24 +569,28 @@ main .search-box .dropdown .dropdown-box {
   display: none;
 }
 main form {
-  padding-left: 18px;
+  padding-left: 48px;
+  margin-left: 50px;
+  position: relative;
 }
 main form button {
-  width: 96.27px;
   border: none;
   background-color: transparent;
   font-family: "Mulish", sans-serif;
   font-weight: 600;
-  opacity: 0.6;
+  opacity: 0.5;
+  position: absolute;
+  left: 15px;
+  top: 15px;
 }
 main form button:focus {
   outline: none;
 }
 main form button i {
-  width: 27px;
+  transform: scale(1.2);
 }
 main form input {
-  padding: 17px 60px;
+  padding: 17px 60px 10px 0px;
   border: none;
   font-size: 18px;
   font-weight: bold;
@@ -759,6 +771,75 @@ main .day {
   font-size: 14px;
 }
 
+@media screen and (max-width: 1163px) {
+  .nav-bootstrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 1024px) {
+  header nav {
+    display: none;
+  }
+  header .header-buttons {
+    display: none;
+  }
+  header .responsive-button {
+    display: inline-block;
+  }
+
+  .articles-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  main .search-box {
+    width: 400px;
+  }
+  main .search-box .dropdown {
+    display: none;
+  }
+  main .search-box form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 714px) {
+  .nav-bootstrap {
+    margin: 10px;
+  }
+  .nav-bootstrap .nav-navbar ul {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 576px) {
+  .articles-box {
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 489px) {
+  .nav-bootstrap {
+    position: relative;
+  }
+  .nav-bootstrap .nav-buttons {
+    margin: 20px;
+  }
+  .nav-bootstrap .nav-navbar ul {
+    position: absolute;
+    right: 15px;
+    bottom: 150px;
+    flex-direction: row;
+  }
+
+  main .search-box {
+    width: 360px;
+  }
+}
 body {
   min-height: 100vh;
   font-family: "Poppins", sans-serif;

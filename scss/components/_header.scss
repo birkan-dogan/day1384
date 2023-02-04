@@ -62,4 +62,9 @@ header {
       }
     }
   }
+  .responsive-button {
+    display: none;
+    transform: scale(2);
+    cursor: pointer;
+  }
 }
