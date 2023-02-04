@@ -1,0 +1,113 @@
+.nav-bootstrap {
+  margin: 0px 50px;
+  height: 144px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  //   latest-popular buttons
+  .nav-buttons {
+    height: 61px;
+    width: 236px;
+    margin: 40px 0px;
+    background-color: $background-color;
+    border: 1px solid $border-color;
+    border-radius: 70px;
+    padding: 5px;
+    font-family: $font-family-2;
+    display: flex;
+
+    .nav-buttons-latest {
+      font-weight: 600;
+      background: #ffffff;
+      border: 1px solid $border-color;
+      box-shadow: 0px 10px 15px -10px rgba(2, 5, 132, 0.05);
+      border-radius: 45px;
+      width: 107px;
+      height: 51px;
+      padding: 15px 30px;
+      &:focus {
+        outline: none;
+      }
+    }
+    .nav-buttons-popular {
+      width: 115px;
+      height: 51px;
+      opacity: 0.6;
+      border: none;
+      background: transparent;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .nav-navbar {
+    margin: 48px auto;
+    padding-top: 30px;
+
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // border: 1px solid blue;
+
+      li {
+        display: inline-block;
+        width: 70px;
+        height: 44px;
+        a {
+          color: $primary-color;
+          opacity: 0.7;
+          padding: 10px 15px;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+      .all {
+        background-color: $background-color;
+        border: 1px solid $border-color;
+        border-radius: 32px;
+        font-weight: 600;
+        opacity: 1;
+        width: 49px;
+        height: 44px;
+        position: relative;
+        bottom: 7px;
+        a {
+          position: relative;
+          top: 7px;
+          right: 2px;
+        }
+      }
+    }
+  }
+  .nav-logos {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 366px;
+    height: 61px;
+    margin: 40px 0px;
+    div {
+      width: 61px;
+      height: 61px;
+      background: #fcfcff;
+      border: 1px solid $border-color;
+      border-radius: 70px;
+      margin-left: 15px;
+      cursor: pointer;
+
+      img {
+        margin: 16px;
+        width: 29px;
+        height: 29px;
+      }
+    }
+    .active {
+      border: 1px solid $active-border-color;
+    }
+  }
+}
