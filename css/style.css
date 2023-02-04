@@ -639,6 +639,7 @@ main .day {
 }
 .nav-bootstrap .nav-navbar {
   margin: 48px auto;
+  margin-left: 260px;
   padding-top: 30px;
 }
 .nav-bootstrap .nav-navbar ul {
@@ -699,6 +700,63 @@ main .day {
 }
 .nav-bootstrap .nav-logos .active {
   border: 1px solid #ff6a95;
+}
+
+.articles-box {
+  margin: 40px 50px 70px;
+  font-family: "Mulish", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.articles-box .article-box {
+  margin: 10px;
+}
+.articles-box .article-box .card-logo {
+  position: relative;
+}
+.articles-box .article-box .card-logo .single-card {
+  width: 426px;
+  height: 319px;
+}
+.articles-box .article-box .card-logo .card-logo-img {
+  width: 29px;
+  height: 29px;
+}
+.articles-box .article-box .card-logo div {
+  width: 61px;
+  height: 61px;
+  background-color: #fcfcff;
+  border: 1px solid #efefff;
+  border-radius: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.articles-box .article-box .user-icons {
+  margin-top: 20px;
+  width: 428px;
+  height: 38px;
+  display: flex;
+  justify-content: space-between;
+}
+.articles-box .article-box .user-icons img {
+  width: 38px;
+  height: 38px;
+}
+.articles-box .article-box .user-icons p {
+  display: inline-block;
+  font-size: 14px;
+}
+.articles-box .article-box .user-icons p strong {
+  font-weight: 600;
+}
+.articles-box .article-box .user-icons .svg-icons div {
+  display: inline-block;
+  font-size: 14px;
 }
 
 body {
