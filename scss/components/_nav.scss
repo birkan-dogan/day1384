@@ -1,9 +1,10 @@
 .nav-bootstrap {
   margin: 0px 50px;
-  height: 144px;
-  display: flex;
+  min-height: 144px;
+  width: 92.5vw;
+  @include flex-container;
   justify-content: space-between;
-  align-items: center;
+  flex-wrap: wrap;
 
   //   latest-popular buttons
   .nav-buttons {
@@ -43,15 +44,11 @@
   }
 
   .nav-navbar {
-    margin: 48px auto;
-    margin-left: 260px;
+    margin-left: 7vw;
     padding-top: 30px;
 
     ul {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      // border: 1px solid blue;
+      @include flex-container;
 
       li {
         display: inline-block;
@@ -71,7 +68,7 @@
         background-color: $background-color;
         border: 1px solid $border-color;
         border-radius: 32px;
-        font-weight: 600;
+        font-weight: bold;
         opacity: 1;
         width: 49px;
         height: 44px;
@@ -91,7 +88,7 @@
     align-items: center;
     width: 366px;
     height: 61px;
-    margin: 40px 0px;
+    // margin: 40px 0px;
     div {
       width: 61px;
       height: 61px;

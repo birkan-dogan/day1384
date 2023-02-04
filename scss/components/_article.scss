@@ -1,5 +1,6 @@
 .articles-box {
   margin: 40px 50px 70px;
+  width: 93vw;
   font-family: $font-family-2;
   display: flex;
   flex-wrap: wrap;
@@ -42,13 +43,11 @@
       img {
         width: 38px;
         height: 38px;
+        margin-right: 14px;
       }
       p {
         display: inline-block;
         font-size: 14px;
-        strong {
-          font-weight: 600;
-        }
       }
       .svg-icons {
         div {

@@ -24,9 +24,7 @@ main {
   }
 
   .search-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-container;
 
     background-color: #ffff;
     border: 1px solid $border-color;
@@ -50,7 +48,7 @@ main {
         p {
           font-family: $font-family-2;
           font-weight: 600;
-          margin-top: 12px;
+          margin: 12px 10px 15px;
         }
 
         button {
@@ -78,13 +76,12 @@ main {
       font-family: $font-family-2;
       font-weight: 600;
       opacity: 0.6;
-
       &:focus {
         outline: none;
       }
 
       i {
-        width: 28px;
+        width: 27px;
       }
     }
 
