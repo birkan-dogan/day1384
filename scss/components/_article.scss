@@ -1,58 +1,69 @@
-.articles-box {
-  margin: 40px 50px 70px;
-  width: 93vw;
+.cards {
   font-family: $font-family-2;
-  display: flex;
-  flex-wrap: wrap;
+  margin: 40px 50px;
+  @include flex-container;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 33px;
 
-  .article-box {
-    margin: 10px;
+  .card-boxes {
+    width: 425px;
+    height: 377px;
 
-    .card-logo {
+    .card-images {
       position: relative;
-      .single-card {
-        width: 426px;
+      img {
+        width: 425px;
         height: 319px;
       }
-      .card-logo-img {
-        width: 29px;
-        height: 29px;
-      }
-      div {
+      .card-images-logo {
         width: 61px;
         height: 61px;
         background-color: $background-color;
         border: 1px solid $border-color;
         border-radius: 70px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-container;
         position: absolute;
         top: 20px;
         left: 20px;
+        img {
+          width: 29px;
+          height: 29px;
+        }
       }
     }
 
-    .user-icons {
-      margin-top: 20px;
-      width: 428px;
+    .card-user-icons {
+      width: 427px;
       height: 38px;
-      display: flex;
+      margin-top: 20px;
+      @include flex-container;
       justify-content: space-between;
-      img {
-        width: 38px;
-        height: 38px;
-        margin-right: 14px;
-      }
-      p {
-        display: inline-block;
-        font-size: 14px;
-      }
-      .svg-icons {
-        div {
+
+      .card-user {
+        img {
+          width: 38px;
+          height: 38px;
+        }
+
+        p {
           display: inline-block;
+          margin-left: 14px;
           font-size: 14px;
+        }
+      }
+
+      .card-icons {
+        @include flex-container;
+        gap: 20px;
+
+        img {
+          width: 26px;
+          height: 26px;
+        }
+
+        p {
+          display: inline-block;
         }
       }
     }

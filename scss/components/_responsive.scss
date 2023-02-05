@@ -16,9 +16,9 @@
       display: inline-block;
     }
   }
-  .articles-box {
-    @include flex-container;
-    gap: 20px;
+
+  .cards {
+    justify-content: center;
   }
 }
 
@@ -49,12 +49,6 @@
   }
 }
 
-@include media-sm {
-  .articles-box {
-    margin: 10px;
-  }
-}
-
 @media screen and (max-width: 489px) {
   .nav-bootstrap {
     position: relative;
@@ -71,26 +65,36 @@
     }
   }
 
-  //   .articles-box {
-  //     width: 300px;
-  //     margin: 40px;
-
-  //     .article-box {
-  //       .single-card {
-  //         img {
-  //           width: 250px !important;
-  //         }
-  //       }
-  //     }
-
-  //     .user-icons {
-  //       width: 250px;
-  //     }
-  //   }
-
   main {
     .search-box {
       width: 360px;
+    }
+  }
+
+  .cards {
+    .card-boxes {
+      width: 350px;
+      height: 300px;
+
+      .card-images {
+        img {
+          width: 350px;
+          height: 250px;
+        }
+      }
+
+      .card-user-icons {
+        width: 350px;
+        height: 20px;
+      }
+    }
+  }
+
+  main {
+    .letter-box {
+      .main-description {
+        padding: 10px;
+      }
     }
   }
 }
