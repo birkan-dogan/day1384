@@ -1,3 +1,5 @@
+// search field
+
 const form = document.querySelector("form");
 const input = document.querySelector("input");
 
@@ -30,6 +32,8 @@ input.addEventListener("keydown", function () {
   });
 });
 
+// arrow button
+
 const arrowButton = document.getElementById("arrow");
 const dropdown = document.getElementsByClassName("dropdown-box");
 const arrowIcon = document.getElementById("arrow-icon");
@@ -45,5 +49,28 @@ arrowButton.addEventListener("click", function () {
   } else {
     arrowIcon.style.transform = "rotate(0deg)";
     dropdown[0].style.display = "none";
+  }
+});
+
+// hamburger button
+
+let booleanValueForHamburger = false;
+
+const hamburgerButton = document.getElementById("hamburger");
+// console.log(hamburgerButton.innerHTML);
+const container = document.getElementById("responsive-menubar");
+
+hamburgerButton.addEventListener("click", function () {
+  booleanValueForHamburger = !booleanValueForHamburger;
+
+  //   booleanValueForHamburger
+  //     ? container.classList.add("active")
+  //     : container.classList.remove("active");
+  if (booleanValueForHamburger) {
+    container.classList.add("active");
+    hamburgerButton.innerHTML = `<i class="fa-solid fa-xmark"></i>`;
+  } else {
+    container.classList.remove("active");
+    hamburgerButton.innerHTML = `<i class="fa-solid fa-bars"></i>`;
   }
 });

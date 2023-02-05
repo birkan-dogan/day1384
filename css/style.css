@@ -796,6 +796,45 @@ main .day {
   display: inline-block;
 }
 
+.responsive-menu {
+  display: none;
+  transition: all 2s;
+}
+
+.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 2s;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99999;
+  background-color: #fcfcff;
+}
+.active ul {
+  list-style-type: none;
+}
+.active ul li {
+  border-bottom: 2px solid #202142;
+}
+.active ul li a {
+  color: #202142;
+  font-size: 2rem;
+}
+.active .responsive-menu-buttons button {
+  border: none;
+  background-color: #202142;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid #efefff;
+  color: #fcfcff;
+}
+.active .responsive-menu-buttons button a {
+  color: #fcfcff;
+}
+
 @media screen and (max-width: 1163px) {
   .nav-bootstrap {
     display: flex;
