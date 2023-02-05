@@ -546,6 +546,7 @@ main .search-box .dropdown {
   height: 54px;
   position: absolute;
   left: 0px;
+  transition: all 1s;
 }
 main .search-box .dropdown .dropdown-big {
   display: flex;
@@ -565,8 +566,18 @@ main .search-box .dropdown .dropdown-big button {
 main .search-box .dropdown .dropdown-big button:focus {
   outline: none;
 }
+main .search-box .dropdown .dropdown-big button img {
+  width: 30px;
+  height: 30px;
+  transition: all 1s;
+}
 main .search-box .dropdown .dropdown-box {
   display: none;
+  background-color: white;
+  padding: 10px;
+  height: 150px;
+  overflow: auto;
+  transition: all 2s;
 }
 main form {
   padding-left: 48px;

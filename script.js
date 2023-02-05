@@ -19,8 +19,8 @@ form.addEventListener("submit", (e) => {
 });
 
 input.addEventListener("keydown", function () {
-  console.log(input.value.toLowerCase());
   inputValue = input.value.toLowerCase();
+
   [...cardsSection].forEach(function (card) {
     if (card.innerHTML.includes(inputValue)) {
       card.style.display = "";
@@ -28,4 +28,22 @@ input.addEventListener("keydown", function () {
       card.style.display = "none";
     }
   });
+});
+
+const arrowButton = document.getElementById("arrow");
+const dropdown = document.getElementsByClassName("dropdown-box");
+const arrowIcon = document.getElementById("arrow-icon");
+
+let booleanValue = false;
+
+arrowButton.addEventListener("click", function () {
+  booleanValue = !booleanValue;
+  if (booleanValue) {
+    arrowIcon.style.transform = "rotate(180deg)";
+    dropdown[0].style.display = "inline-block";
+    dropdown[0].style.transition = "all 1s";
+  } else {
+    arrowIcon.style.transform = "rotate(0deg)";
+    dropdown[0].style.display = "none";
+  }
 });

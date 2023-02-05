@@ -39,11 +39,11 @@ main {
       height: 54px;
       position: absolute;
       left: 0px;
+      @include transition(1s);
 
       .dropdown-big {
         @include flex-container;
         gap: 20px;
-
         p {
           font-family: $font-family-2;
           font-weight: 600;
@@ -56,11 +56,21 @@ main {
           &:focus {
             outline: none;
           }
+          img {
+            width: 30px;
+            height: 30px;
+            @include transition(1s);
+          }
         }
       }
 
       .dropdown-box {
         display: none;
+        background-color: #ffff;
+        padding: 10px;
+        height: 150px;
+        overflow: auto;
+        @include transition(2s);
       }
     }
   }
